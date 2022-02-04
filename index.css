@@ -1,0 +1,46 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	text-decoration: none;
+	scroll-behavior: smooth;
+}
+
+header {
+	position: fixed ;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 2;
+	background-color: darkslateblue;
+	padding: 2em;
+	text-align: center;
+}
+
+header menu a {
+	padding: .5em 1em;
+	font-size: 1.3em;
+	color: white;
+	text-transform: capitalize;
+}
+header menu a.active,
+header menu a:hover {
+	border-bottom: #ccc .2em solid;
+	color: #ccc;
+}
+
+section {
+	min-height: 100vh;
+	display: flex;
+	align-items: center; /*vertical alignment*/
+	justify-content: center; /*horizontal alignment*/
+	font-size: 7em;
+	color: #ccc;
+	font-weight: bolder;
+	text-transform: uppercase;
+}
+
+section:nth-child(odd) {
+	background: #eee;
+}
